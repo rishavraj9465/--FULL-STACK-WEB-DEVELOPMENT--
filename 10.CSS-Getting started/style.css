@@ -1,0 +1,57 @@
+
+h2{
+    color:rgb(118, 118, 63);
+    background-color:black;
+}
+
+h3{
+    color:blue;
+    background-color: green;
+}
+p{
+    color:red;
+    background-color: bisque;
+}
+button{
+    color:gold;
+    background-color:black;
+}
+/*Topic6 Practice Qs*/
+b{
+    color:orange;
+}
+button{
+    background-color:blue;
+    color:white;
+}
+h4{
+    background-color:black;
+    color:white;
+}
+/*Topic7_color Systems (Name & RGB)*/
+h5{
+    color:rgb(255, 255, 0);
+}
+/*Topic8_Hex Codes*/
+h6{
+    color:#ffffff;
+    background-color:#000000;
+}
+p1{
+    color:#00f;
+}
+/*Topic9_Prac Qs*/
+p2{
+color:#ffffff;
+background-color:#000000;
+}
+p3{
+    color:rgb(255, 255, 0);
+    }
+p4{
+    color:#0000ff;
+  }
+ /*Topic10_Text ALiGN Property= SEE ALL TOPICS -2*/
+
+           
+

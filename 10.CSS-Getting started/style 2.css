@@ -1,0 +1,28 @@
+/*Topic10_Text ALiGN Property*/
+h2{
+    text-align:right;
+    border:solid;
+    width:50%;
+}
+p{
+    text-align:center;
+}
+p1{
+    font-weight:normal;
+    font-weight:700;
+}
+p2{
+    text-decoration: green wavy line-through  ;
+    text-decoration: red dotted underline ;
+    text-decoration: double olive  underline ;
+}
+a{
+    text-decoration:none;
+}
+p3{
+    line-height:2.5;
+    letter-spacing:5px;
+    font-size:10px;
+    font-family:arial;
+
+}
