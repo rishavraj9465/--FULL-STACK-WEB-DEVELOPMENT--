@@ -1,0 +1,120 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+    /* background-color:green; */
+}
+h3{
+    color:purple;
+}
+h1,h3{
+    color:#b92b27;
+}
+/*Topic_5 ID selector */
+#login {
+    background-color:#fff;
+}
+#signup {
+    background-color:#b92b27;
+    color:#ffffff;
+}
+/* class selector */
+.upvote{
+    background-color:green;
+    color:aliceblue;
+}
+
+/* descendant selector */
+.post a {
+    color:purple;
+    background-color:yellow;
+}
+
+nav ul li a { /* you can skip multiple selctor = " nav a "  will work same*/
+    color:hotpink;
+}
+
+/* sibling combinator */
+
+p + h3 {
+    text-decoration:underline;
+}
+
+.upvote + button {
+    background-color:cornflowerblue;
+    color:darkblue;
+}
+ /* child combinator */
+
+ div>input {
+    background-color:darksalmon;
+ }
+
+ /* Atrribute selector */
+
+ input[type="text"]{
+    color:red;
+ }
+ input[type="password"]{
+    color:green;
+ }
+input[type]{
+    background-color:ghostwhite;
+}
+
+/* prac qs */
+div[id="myId"] p {
+    color:green;
+}
+
+/* Pseudo class  */
+
+/* 1.hover */
+button:hover {
+    color:white;
+    background-color:black;
+}
+
+h3:hover{
+    text-decoration:overline;
+}
+/* 2.active */
+button:active{
+    background-color:hotpink;
+    color:black;
+}
+p:active{
+    font-weight:bold;
+    color:green;
+}
+/* checked */
+input[type="radio"]:checked + label{
+    font-weight:bold;
+    color:red;
+}
+/* nth-of-type  */
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+/* Topic14 Pseudo Elements */
+/* firstletter  */
+h1::first-letter{
+    color:green;
+}
+
+/* first-line  */
+p::first-line{
+ color:purple;
+}
+
+/* slection  */
+p::selection{
+    background-color:rgb(205, 197, 50);
+}
+
+/* cascading and specificity */
+h3{
+    background-color:yellow;
+}
+h3{
+    background-color:blue;
+}
