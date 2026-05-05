@@ -1,0 +1,103 @@
+ div{
+    height: 200px;
+    width : 200px;
+    background-color: rgba(72, 255, 0, 0.826); /* #ff00007f */
+ } 
+ 
+
+#opacity{
+    background-color: #ffa511;
+    opacity:0.5;
+}
+
+/* #Topic 2 -Transitions in CSS */
+
+#t2{
+    height: 200px;
+    width : 200px;
+    background-color: rgba(72, 255, 0, 0.826);
+    transition-duration:2s;
+    transition-delay: 1s;
+}
+
+#t2:hover{
+    background-color: black;
+    border-radius:50%;
+}
+
+#t3{
+    height: 100px;
+    width : 100px;
+    background-color: green;
+    margin : 0 auto ; /* equal margin from left anad right */
+    margin-top:10px;
+    transition: margin-top 2s ease-in-out 0.2s;
+
+}
+#t3:hover{
+    margin-top:400px;
+    background-color: pink;
+}
+
+/*  #Topic 3 -Transform Rotate */
+section{
+    margin-top:100px;
+}
+.rotate{
+    width:200px;
+    height:50px;
+    text-align:center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin : 10px auto;
+    
+}
+
+.rotate:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+
+.rotate:nth-of-type(3n){
+    background-color: #ebb02d;;
+}
+
+/* transform */
+#one{
+    transform:rotate(45deg);
+}
+#two{
+    transform:scale(0.5);
+    transform:scale(2,0.5)
+}
+#three{
+    transform:translatex(-100px);
+}
+#four{
+    transform:skew(30deg);
+}
+#five{
+    transform:rotate(30deg) translateX(150px);
+}
+
+/* #Topic 7-Box Shadow */
+#six{
+    width:200px;
+    height:50px;
+    text-align: center;
+    background-color: #7aa874;
+    margin:10px;
+    box-shadow:2px 2px 8px rgb(0, 0, 0);
+}
+
+/* #Topic 8 Background Image */
+#seven{
+    width:400px;
+    height:200px;
+    color:white;
+    background-color:#7aa874;
+    margin:10px auto;
+    background-image:url(img.avif);
+    background-size: cover;
+}
+
+/* Topic 9 Card Hover Effect see next index2 */
