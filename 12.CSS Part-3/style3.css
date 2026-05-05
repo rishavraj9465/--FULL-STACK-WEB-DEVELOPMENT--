@@ -1,0 +1,40 @@
+div{
+    height:200px;
+    width:200px;
+    background-color:greenyellow;
+    /* border:2px solid black; */
+    margin:5px;
+    /* display:inline; not working because many styles ignored 
+    by browser in inline  */
+
+    display:inline-block;
+}
+#third{
+    /* display:none; */
+}
+/* Topic 12-Relative units(percentage) */
+h1{
+    border:2px solid black;
+    width:33.33%; /*Relative to the parent*/
+}
+
+#outer{
+    height:400px;
+    width:400px;
+    background-color:pink;
+    margin:50px;
+}
+
+#inner{
+    height:100px;
+    width:100px;
+    background-color:cornflowerblue;
+    margin-left:10%;/*relative to the height and width of parent which is #outer*/
+    /* margin-top:0%; */
+}
+/* Topic 13-Em & Rem in units in next index4 */
+
+
+
+
+

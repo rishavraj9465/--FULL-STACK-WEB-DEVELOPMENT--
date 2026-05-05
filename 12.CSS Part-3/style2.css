@@ -1,0 +1,26 @@
+/* h2{
+    display:inline;
+    background-color:aqua;
+}
+
+span{
+    display:block;
+    background-color:yellow;
+} */
+
+span{
+    /* background-color:lime; */
+    border:2px solid black;
+    height:100px; /*ignored by browser*/
+    width:200px;  /*ignored by browser*/
+    padding:50px;  /*only set to left and right */
+    margin:20px;    /*only set to left and right */
+}
+div{
+    border:2px solid black;
+    height:100px; 
+    width:200px;  
+    padding:50px; 
+    margin:20px;  
+}
+/* Topic 11 Inline-block - next style 3 */
