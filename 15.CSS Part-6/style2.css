@@ -1,0 +1,78 @@
+.box{
+    height:100px;
+    width:300px;
+    background-color: pink;
+
+    animation-name: fontAnimation ,widthAnimate,percentAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+
+    
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size:20px;
+    }
+    to{
+        font-size:40px;
+    }
+}
+
+@keyframes widthAnimate{
+    from{
+        width:10px;
+        background-color: green;
+    }
+    to{
+        width:400px;
+        background-color: blue;
+        border-radius: 15px;
+    }
+}
+@keyframes percentAnimate{
+    0%{color:green}
+    50%{color:rebeccapurple}
+    100%{color:red}
+}
+
+/* #Topic 12 Media Queries */
+#a{
+    background-color: yellow;
+    border:2px solid black;
+}
+@media(width:400px){
+   #a{background-color: red;
+      color:white;
+  }
+   #b{
+    height:100px;
+    width:100px;
+    background-color: blue;
+  }
+}
+
+@media(min-width:700px){
+    #a{
+        background-color: greenyellow;
+    }
+}
+@media(max-width:200px){
+    #a{
+        background-color: pink;
+    }
+}
+@media (min-width:200px) and (max-width:300px){
+    #a{
+        background-color: magenta;
+    }
+}
+@media (orientation:landscape){
+    #a{
+        background-color: aqua;
+        color:brown;
+    }
+}
