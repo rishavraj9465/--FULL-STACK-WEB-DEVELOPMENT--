@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17.Bootstrap</title>
+  <!-- bootstrap will load first-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--css will override bootstrap(bec it is linked after bootstrap) styling if edited by css file-->
+  <link rel="stylesheet" href="style.css" > 
+</head>
+<body>
+
+  <div id="topic1">
+  <button>click me</button>
+  <button class="btn">click me</button>
+  <button class="btn btn-danger">click me</button>
+  <button class="btn btn-success">click me</button>
+  </div>
+ 
+
+  <hr>
+  <!-- #Topic 3 container(layout) -->
+   <h1>#Topic 3 container(layout)</h1>
+
+ <div class="container">
+ <!--will contain content inside predefined container by bootstrap
+     -  container-md and container-fluid -->
+
+  <h2>Bootstap Demo</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto expedita quia ipsa, non eaque modi praesentium quod perspiciatis quae explicabo consequuntur ad? Laborum fugit veniam, officiis expedita sint neque.
+    Deleniti asperiores illum ratione. Commodi dolor ducimus repudiandae reiciendis neque eligendi molestias quo placeat quisquam atque rerum aut quia pariatur a voluptate, optio eum possimus error consequatur, sit illum deleniti?
+    Voluptates voluptas ut aliquam incidunt unde officia at dolorem sed non hic nobis recusandae quo provident ullam quasi quas tenetur, eligendi cum. Modi dolores quisquam, illum neque eveniet soluta amet?
+    Laudantium neque repudiandae mollitia veniam porro fugit tempore architecto, odio ipsa? Libero cumque quam saepe sunt excepturi molestias voluptate veritatis at, doloribus maiores iste animi nam, optio, sed corrupti numquam.
+    Maxime eum similique ipsam adipisci id earum officiis consectetur ipsa architecto, aliquid commodi consequuntur nobis. Laudantium cum minus deserunt excepturi minima. Enim harum tempora, nisi voluptate asperiores deleniti molestias quibusdam.
+  </p>
+ </div>
+
+ <!-- #Topic 4 Button(component) -->
+  <h1>#Topic 4 Button(component)</h1>
+
+    <div>
+      <button class="btn">click me</button>
+      <button class="btn btn-danger">click me</button>
+      <button class="btn btn-primary">click me</button>
+      <button class="btn btn-success">click me</button>
+      <button class="btn btn-warning">click me</button>
+      <br>
+      <button class="btn btn-outline">click me</button>
+      <button class="btn btn-outline-danger">click me</button>
+      <button class="btn btn-outline-primary">click me</button>
+      <button class="btn btn-outline-success">click me</button>
+      <button class="btn btn-outline-warning">click me</button>
+      <br>
+      <button class="btn btn-success btn-lg">click me</button>
+      <button class="btn btn-warning btn-sm">click me</button>
+      <br>
+      <button class="btn btn-outline-success" disabled>click me</button>
+      <button class="btn btn-outline-warning">click me</button>
+      <br>
+      <a href="#" class="btn btn-outline-dark">Google me!</a>
+    </div>
+
+    <!-- #Topic 5 Badge (component) -->
+     <h1>#Topic 5 Badge (component)</h1>
+     <div>
+      <span class="badge bg-danger">new</span>
+      <h3>Notification  <span class="badge bg-primary">20+</span></h3>
+      <br>
+
+      <button class="btn btn-primary">Notification<span class="badge bg-danger rounded-pill">10+</span></button>
+
+     </div>
+
+     <!-- #Topic 6 Alert Component -->
+      <h1>#Topic 6 Alert Component </h1>
+
+      <div class="alert alert-danger">Download failed please try again!</div>
+      <div class="alert alert-success alert-dismissible"> Congratulation! Your score is 50/50.
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+
+        <!-- #Topic 8 Button Group (component) -->
+        <h1>#Topic 8 Button Group (component)</h1>
+
+        <div>
+        <button class="btn btn-success">one</button>
+        <button class="btn btn-success">two</button>
+        <button class="btn btn-success">three</button>
+
+        </div>
+        <hr>
+        <div class="btn-group">
+        <button class="btn btn-success">one</button>
+        <button class="btn btn-outline-primary">two</button>
+        <button class="btn btn-warning">three</button>
+        </div>
+        
+        <div class="btn-group">
+        <button class="btn btn-outline-success">one</button>
+        <button class="btn btn-outline-success">two</button>
+        <button class="btn btn-outline-success">three</button>
+        </div>
+        
+
+<!-- <#Topic 8 Navbar(component) -->
+   <h1>Topic 8 Navbar(component) -see top</h1>
+
+ 
+ 
+    <nav class="navbar bg-primary  fixed-top navbar-expand-lg" data-bs-theme="dark">
+
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Brand name</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">About us</a>
+          </div>
+        </div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+<!-- #Topic 9 Card(component) -->
+<h1>#Topic 9 Card(component)</h1>
+
+<div class="card" style="width: 18rem;">
+  <img src="man.jpg" class="card-image-top">
+  <div class="card-body">
+    <h5 class="card-title">Rishav Raj</h5>
+    <p class="card-text">It's a single life to take actions towards growth</p>
+    <a href="#" class="btn btn-primary">Know More</a>
+
+  </div>
+</div>
+
+<!-- #Topic 10 Grid(Layout) -->
+<h1>#Topic 10 Grid(Layout)</h1>
+
+<div class="container bg-white">
+  <h2>Grid System</h2>
+  <div class="row" >
+    <div class="col bg-success">one</div>
+    <div class="col bg-danger">two</div>
+  </div>
+  <br>
+
+  <div class="row" >
+    <div class="col bg-success">one</div>
+    <div class="col bg-danger">two</div>
+    <div class="col bg-success">three</div>
+  </div>
+<br>
+<div class="row" >
+    <div class="col-2 bg-success">one</div>
+    <div class="col-4 bg-danger">two</div>
+    <div class="col-6 bg-success">three</div>
+  </div>
+  <br>
+  <div class="row" >
+    <div class="col-md-2 bg-success">one</div>
+    <!--when screen will get small each col will go to next row and occupy full width-->
+    <div class="col-md-4 bg-danger">two</div>
+    <div class="col-md-6 bg-success">three</div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6 col-xl-4 bg-success" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quasi expedita officiis natus quod voluptate eligendi minus voluptatem commodi animi, maxime ducimus consequuntur aspernatur fugiat sed numquam quisquam est necessitatibus.</div>
+    <div class="col-md-6 col-xl-4 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore quas sunt, unde amet iusto optio, repellendus repellat dolores impedit perferendis, similique tempora debitis esse rerum molestiae mollitia laudantium suscipit.</div>
+    <div class="col-md-6 col-xl-4 bg-success">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi culpa quibusdam laudantium laborum, praesentium tempore, animi impedit maiores nam sapiente iste odio. Quo quod aliquam dicta voluptatem a. Animi, autem?</div> 
+
+  </div>
+
+</div>
+
+<!-- #Topic 11 Grid (Vertiical alignment) -->
+<h1>#Topic 11 Grid (Vertiical alignment)</h1>
+
+
+<div class="container bg-white">
+  <div class="row align-items-start">
+    <div class="col bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aperiam quasi velit, magnam expedita veritatis hic nostrum accusantium beatae nisi dolorum facilis reprehenderit voluptas alias vitae. Nostrum ad laudantium vel?</div>
+    <div class="col bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus, assumenda laborum iste, molestias illum quibusdam odit quas dignissimos id laboriosam deleniti nostrum debitis aut consectetur fugiat voluptate autem at.</div>
+    <div class="col bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima, consectetur nulla iste placeat ipsam atque dolorem! Quod, dolorem reprehenderit cumque mollitia iure earum exercitationem sapiente. Distinctio natus hic mollitia.
+    Quibusdam accusamus cum sint quis beatae. Non ut recusandae odit rerum accusamus, dicta possimus illum voluptate enim debitis temporibus ratione fugiat dolorum libero. Vero est molestias quam quos, blanditiis quis!</div>
+    <div class="col bg-danger align-self-end" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Non libero amet in dignissimos, possimus reprehenderit velit? Reprehenderit nesciunt quasi optio! Voluptatem, aliquid vel. Tempore voluptatum neque magni dicta, voluptates error.</div>
+  </div>
+</div>
+
+<!-- #Topic 12 Forms control in Bootstap -->
+
+<h1>#Topic  12 Forms control in Bootstap</h1>
+
+<div class="container">
+  <form class="mb-3">
+    <label class="form-label" for="email">Email</label>
+    <input type="text" id="email" placeholder="Email" class="form-control" >
+
+    <label class="form-label" for="pass">Password</label>
+    <input type="password" id="pass" placeholder="password" class="form-control" >
+
+    <label class="form-label" for="add" >Address</label>
+    <input type="text" id="add" placeholder="address" class="form-control-lg">
+
+    <!-- #Topic 13 Select in Form -->
+     <h3>#Topic 13 Select in Form </h3>
+
+     <select class="form-select">
+      <option selected>-Choose your city-</option>
+      <option value="1">Mumbai</option>
+      <option value="2">Delhi</option>
+      <option value="3">Pune</option>
+     </select>
+
+     <!-- #Topic 14 Checkbox & Radio in form -->
+      <h3>#Topic 14 Checkbox & Radio in form</h3>
+
+     <input type="checkbox" id="agree"> <!--normal checkbox-->
+      <label for="agree">Agree</label>
+
+      <input type="checkbox" id="agree1" class="form-check-input"> <!--bootstrap checkbox-->
+     <label for="agree1" class="form-check-label">Agree</label>
+
+    <input type="radio" id="agree2" class="form-check-input"> <!--bootstrap radio btn-->
+     <label for="agree2" class="form-check-label">YES/NO</label>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+    <label class="form-check-label" for="switchCheckDefault">Default switch checkbox input</label>
+  </div>
+
+
+  
+
+   
+
+
+
+
+
+
+
+  </form>
+</div>
+
+
+<div class="container">
+  <form >
+  <!-- #Topic 15 Form layout -->
+   <h3>#Topic 15 Form layout</h3>
+   
+   <div class="row" >
+
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="email">Email</label>
+      <input type="text" id="email" placeholder="Email" class="form-control" >
+    </div>
+
+    <div class="mb-3 col-md-6">
+          <label class="form-label" for="pass">Password</label>
+          <input type="password" id="pass" placeholder="password" class="form-control" >
+    </div>
+
+
+
+   </div>
+
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
