@@ -1,0 +1,210 @@
+#Topic 3  What is variable 
+
+a = 10 
+10
+b = 5
+5
+a
+10
+b
+5
+a + b 
+15
+
+#Topic 4 Data types in js
+
+a = 20
+20
+typeof a
+'number'
+age = 23 
+23
+typeof age
+'number'
+name = "tony"
+'tony'
+typeof name 
+'string'
+typeof 5.9
+'number'
+typeof 'a'
+'string'
+
+
+
+a = 10
+10
+b = 5
+5
+a + b
+15
+a * b
+50
+a - b
+5
+a / b
+2
+
+// Limit  to numbers
+c = 0.999999999999999999999999999999999999999999
+1
+
+#Topic 6 operations in js
+
+sum = a + b
+15
+diff = a -b 
+5
+multiply = a * b 
+50
+divide = a / b 
+2
+sum
+15
+diff
+5
+
+12 % 5
+2
+2**3
+8
+a = 2 
+2
+b=4
+4
+a**b
+16
+
+0/0
+NaN
+typeof NaN
+'number'
+NaN+1
+NaN
+NaN-1
+NaN
+NaN + NaN
+NaN
+
+#Topic 8 operator precedence
+(2+1)*3
+9
+3/1+2**2
+7
+4+1*6/2
+7
+(5+2)/7+1*2
+3
+
+#topic 9 let,const & var keywords
+
+let age;
+undefined
+age=23;
+23
+age=age+1;
+24
+let cgpa = 8.99
+undefined
+cgpe = cgpa +1 ;
+9.99
+let side =4 ;
+undefined
+area = side**2;
+16
+
+const pi=3.14
+undefined
+pi=pi+1;//error
+
+const pi =3.14;
+undefined
+let rad = 5;
+undefined
+let area = pi * rad**2;
+undefined
+area
+78.5
+
+var x =5;
+undefined
+x=x+1;
+6
+
+#topic10 practice qs 
+
+let age=23;
+undefined
+age+2; //will not update age value
+25 
+
+
+let hindi=80;
+undefined
+let eng=90;
+undefined
+let math=100;
+undefined
+let avg=(hindi + eng + math ) / 3;
+undefined
+avg
+90
+
+#topic 11 assignment operators
+let a=5;
+undefined
+a+=1;
+6
+
+#topic 12  unary operators
+
+let age=10;
+undefined
+let newAge=++age;//pre-increment
+undefined
+newAge
+11
+newAge=age++;//post increment
+11 
+
+#topic 18 string js
+
+let sen='this is "apple" '
+undefined
+sen
+'this is "apple" '
+
+
+#topic 19 string indices
+
+let firstName ="rishav"
+undefined
+let lastName="raj"
+undefined
+let fullName = firstName + " " + lastName 
+undefined
+fullName
+'rishav raj'
+
+#topic21 practice qs 
+
+let name = "rishav"
+undefined
+name.length;
+6
+name[0]
+'r'
+name[5]
+'v'
+"rishavraj"+123
+'rishavraj123'
+let a = ""
+undefined
+a.length;
+0
+a=" "
+' '
+a.length
+1
+
+//this is commenting in js
