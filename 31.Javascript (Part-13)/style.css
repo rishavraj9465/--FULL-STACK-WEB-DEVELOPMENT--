@@ -1,0 +1,143 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    background: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* Cards */
+div {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 16px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 
+        0 10px 25px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(255,255,255,0.05);
+    transition: 0.4s ease;
+    position: relative;
+    z-index: 1;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #6366f1, #06b6d4, #22c55e);
+    opacity: 0.2;
+    z-index: -1;        /* ✅ send behind content */
+}
+
+/* Hover */
+div:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #f8fafc;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6366f1, #06b6d4);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4f46e5, #0891b2);
+    transform: scale(1.05);
+}
+
+/* Result text */
+#result {
+    color: #cbd5f5;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/* Dog image */
+#img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 2px solid #334155;
+}
+
+/* Input */
+input {
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    margin-top: 10px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* List */
+ul {
+    list-style: none;
+    margin-top: 15px;
+    text-align: left;
+}
+
+ul li {
+    background: #0f172a;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: #1e40af;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    div {
+        width: 90%;
+    }
+}
