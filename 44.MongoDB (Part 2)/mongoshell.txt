@@ -1,0 +1,482 @@
+C:\Users\RISHAV RAJ>mongosh
+Current Mongosh Log ID: 6a0142056c20922ad2abc113
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3
+Using MongoDB:          7.0.32
+Using Mongosh:          2.8.3
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2026-05-07T21:32:19.360+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show dbs
+admin    40.00 KiB
+college  72.00 KiB
+config   96.00 KiB
+local    40.00 KiB
+test> show collections
+users
+test> show collections
+employees
+users
+test> show dbs
+admin     40.00 KiB
+college   72.00 KiB
+config   108.00 KiB
+local     40.00 KiB
+test      16.00 KiB
+test> db.users.find()
+
+test> db.users.find()
+
+test> db.users.find()
+
+test> db.users.find()
+[
+  {
+    _id: ObjectId('6a018822df187360cdb0222e'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 48,
+    __v: 0
+  }
+]
+test> db.users.find()
+[
+  {
+    _id: ObjectId('6a018822df187360cdb0222e'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 48,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfac'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfab'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 48,
+    __v: 0
+  }
+]
+test> db.users.find()
+[
+  {
+    _id: ObjectId('6a018822df187360cdb0222e'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 48,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfac'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfab'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 48,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61ead'),
+    name: 'Tony',
+    email: 'tony@gmail.com',
+    age: 50,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eae'),
+    name: 'Peter',
+    email: 'peter@gmail.com',
+    age: 47,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eaf'),
+    name: 'Bruce',
+    email: 'bruce@gmail.com',
+    age: 30,
+    __v: 0
+  }
+]
+test> db.users.find()
+[
+  {
+    _id: ObjectId('6a018822df187360cdb0222e'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 48,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfac'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfab'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 48,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61ead'),
+    name: 'Tony',
+    email: 'tony@gmail.com',
+    age: 50,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eae'),
+    name: 'Peter',
+    email: 'peter@gmail.com',
+    age: 47,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eaf'),
+    name: 'Bruce',
+    email: 'bruce@gmail.com',
+    age: 49,
+    __v: 0
+  }
+]
+test> db.users.find()
+\[
+  {
+    _id: ObjectId('6a018822df187360cdb0222e'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfac'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfab'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61ead'),
+    name: 'Tony',
+    email: 'tony@gmail.com',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eae'),
+    name: 'Peter',
+    email: 'peter@gmail.com',
+    age: 47,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eaf'),
+    name: 'Bruce',
+    email: 'bruce@gmail.com',
+    age: 75,
+    __v: 0
+  }
+]
+test> db.users.find()
+[
+  {
+    _id: ObjectId('6a018822df187360cdb0222e'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfac'),
+    name: 'Eve',
+    email: 'eve@gmail.com',
+    age: 42,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfab'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61ead'),
+    name: 'Tony',
+    email: 'tony@gmail.com',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eae'),
+    name: 'Peter',
+    email: 'peter@gmail.com',
+    age: 47,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eaf'),
+    name: 'Bruce',
+    email: 'bruce@gmail.com',
+    age: 35,
+    __v: 0
+  }
+]
+test> db.users.find()
+[
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfab'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61ead'),
+    name: 'Tony',
+    email: 'tony@gmail.com',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eaf'),
+    name: 'Bruce',
+    email: 'bruce@gmail.com',
+    age: 99,
+    __v: 0
+  }
+]
+test> db.users.find()
+[
+  {
+    _id: ObjectId('6a018822df187360cdb0222d'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0189030cac9e339da2dfab'),
+    name: 'Adam',
+    email: 'adam@yahoo.in',
+    age: 75,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a018ce9a42e7c8beeb61eaf'),
+    name: 'Bruce',
+    email: 'bruce@gmail.com',
+    age: 99,
+    __v: 0
+  }
+]
+test> show dbs
+admin    40.00 KiB
+college  72.00 KiB
+config   72.00 KiB
+local    40.00 KiB
+test     80.00 KiB
+test> show dbs
+admin    40.00 KiB
+college  72.00 KiB
+config   72.00 KiB
+local    40.00 KiB
+test     80.00 KiB
+test> show dbs
+admin    40.00 KiB
+amazon    8.00 KiB
+college  72.00 KiB
+config   72.00 KiB
+local    40.00 KiB
+test     80.00 KiB
+test> use amazon
+switched to db amazon
+amazon> show collections
+books
+amazon> db.books.find()
+[
+  {
+    _id: ObjectId('6a021ad0258d7252b2dc01d2'),
+    title: 'Mathematics XII',
+    author: 'RD Sharma',
+    price: 1200,
+    __v: 0
+  }
+]
+amazon> db.books.find()
+[
+  {
+    _id: ObjectId('6a021ad0258d7252b2dc01d2'),
+    title: 'Mathematics XII',
+    author: 'RD Sharma',
+    price: 1200,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a021bde234e6c4e31e16a74'),
+    title: 'Mathematics viii',
+    price: 1200,
+    __v: 0
+  }
+]
+amazon> db.books.find()
+[
+  {
+    _id: ObjectId('6a021ad0258d7252b2dc01d2'),
+    title: 'Mathematics XII',
+    author: 'RD Sharma',
+    price: 1200,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a021bde234e6c4e31e16a74'),
+    title: 'Mathematics viii',
+    price: 1200,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a021e99b3bac772b5a617f5'),
+    title: 'Flamingo',
+    author: 'Shakespare',
+    price: 399,
+    discount: 0,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a02217adb283d3e50333d11'),
+    title: 'Flamingo',
+    author: 'Shakespare',
+    price: 399,
+    discount: 0,
+    category: 'fiction',
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0222199ffa70219b4a02d1'),
+    title: 'Flamingo',
+    author: 'Shakespare',
+    price: 399,
+    discount: 0,
+    category: 'fiction',
+    genre: [ 'comics', 'fiction', 'non-fiction' ],
+    __v: 0
+  }
+]
+amazon> db.books.find()
+[
+  {
+    _id: ObjectId('6a021ad0258d7252b2dc01d2'),
+    title: 'Mathematics XII',
+    author: 'RD Sharma',
+    price: 1200,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a021bde234e6c4e31e16a74'),
+    title: 'Mathematics viii',
+    price: 1200,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a021e99b3bac772b5a617f5'),
+    title: 'Flamingo',
+    author: 'Shakespare',
+    price: 399,
+    discount: 0,
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a02217adb283d3e50333d11'),
+    title: 'Flamingo',
+    author: 'Shakespare',
+    price: 399,
+    discount: 0,
+    category: 'fiction',
+    __v: 0
+  },
+  {
+    _id: ObjectId('6a0222199ffa70219b4a02d1'),
+    title: 'Flamingo',
+    author: 'Shakespare',
+    price: -500,
+    discount: 0,
+    category: 'fiction',
+    genre: [ 'comics', 'fiction', 'non-fiction' ],
+    __v: 0
+  }
+]
+amazon>
