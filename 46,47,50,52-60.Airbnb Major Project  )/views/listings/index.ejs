@@ -1,0 +1,135 @@
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        
+        <style>
+            #filters {
+               display: flex;
+               flex-wrap: wrap;
+               align-items: center ;
+            }
+
+            .filter {
+                text-align: center;
+                margin-right: 2rem;
+                margin-top: 2rem;
+                opacity:0.7;
+            }
+
+            .filter:hover {
+                opacity: 1;
+                cursor: pointer;    
+            }
+
+            .filter p {
+                font-size : 0.8rem;
+            }
+
+            .tax-info {
+                display: none ; 
+            }
+
+            .tax-toggle {
+                border : 1px solid black ;
+                border-radius : 1rem ;
+                height : 3.25rem;
+                padding :1rem; 
+                margin-left : 2rem;
+                display: flex;
+                align-items: center;
+            }
+
+            .filter-link {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .filter-active {
+                opacity: 1;
+                border-bottom: 2px solid black;
+            }
+
+            .filter-clear {
+                color: #FF385C;
+            }
+        </style>
+
+        <div id="filters">
+    <% const categories = [
+        { label: "Trending",      icon: "fa-fire"           },
+        { label: "Rooms",         icon: "fa-bed"            },
+        { label: "Iconic Cities", icon: "fa-mountain-city"  },
+        { label: "Mountains",     icon: "fa-mountain"       },
+        { label: "Castles", icon: "fa-fort-awesome", brand: true },
+        { label: "Amazing Pools", icon: "fa-person-swimming"},
+        { label: "Camping",       icon: "fa-tent"           },
+        { label: "Farms",         icon: "fa-cow"            },
+        { label: "Arctic",        icon: "fa-snowflake"      },
+        { label: "Domes",         icon: "fa-igloo"          },
+        { label: "Ships",         icon: "fa-ship"           },
+    ]; %>
+
+    <% for(let cat of categories) { %>
+        <a href="/listings?category=<%= cat.label %>" class="filter-link">
+            <div class="filter <%= (category === cat.label) ? 'filter-active' : '' %>">
+                <div><i class="<%= cat.brand ? 'fa-brands' : 'fa-solid' %> <%= cat.icon %>"></i></div>
+                <p><%= cat.label %></p>
+            </div>
+        </a>
+    <% } %>
+
+    <% if(category) { %>
+        <a href="/listings" class="filter-link">
+            <div class="filter filter-clear">
+                <div><i class="fa-solid fa-xmark"></i></div>
+                <p>Clear</p>
+            </div>
+        </a>
+    <% } %>
+
+    <div class="tax-toggle">
+        <div class="form-check-reverse form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+            <label class="form-check-label" for="switchCheckDefault">Display total after taxes</label>
+        </div>
+    </div>
+</div>
+
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+            <% for (listing of allListings){ %>
+                <a href="/listings/<%= listing._id %>" class="listing-link">
+                    <div class="card col listing-card">
+                        <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image"
+                            style="height : 20rem">
+                        <div class="card-img-overlay"></div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <b>
+                                    <%= listing.title %>
+                                </b> <br>
+                                &#8377; <%= listing.price.toLocaleString("en-IN") %> /night
+                                <i class="tax-info">&nbsp; &nbsp; +18% GST</i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <% } %>
+        </div>
+
+    </body>
+
+
+    <script>
+        let taxSwitch = document.getElementById("switchCheckDefault");
+        taxSwitch.addEventListener("click", () => {
+        let taxInfo = document.getElementsByClassName("tax-info");
+        for(info of taxInfo) {
+            if(info.style.display != "inline"){
+                info.style.display = "inline" ;
+            }else{
+                info.style.display = "none" ;
+            }
+        }
+        });
+    </script>
